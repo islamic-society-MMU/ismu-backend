@@ -6,6 +6,8 @@ const MONGO_URI = 'mongodb+srv://islamic-society:ismu001@cluster0.pzrnj1b.mongod
 // Routes
 const usersRoute = require('./routes/users')
 const eventsRoute = require('./routes/events')
+const msgRoute = require('./routes/messages')
+
 app.use(express.json())
 
 const connect = () => {
@@ -24,5 +26,6 @@ connect()
 
 app.use('/users', usersRoute)
 app.use('/events', eventsRoute)
+app.use('/messages', msgRoute)
 
 module.exports = app
