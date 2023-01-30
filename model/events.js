@@ -12,7 +12,7 @@ const eventObject = {
         required:true
     },
     date:{
-        type:Date,
+        type:String,
         required:true
     }
 }
